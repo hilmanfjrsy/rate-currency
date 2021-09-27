@@ -51,8 +51,8 @@ export default function App() {
       for (const key in rates) {
         let randomNumber = Math.floor(Math.random() * 4) + 2;
         let persen = randomNumber / 100 * rates[key]
-        let buyRates = rates[key] + persen
-        let sellRates = rates[key] - persen
+        let buyRates = rates[key] - persen
+        let sellRates = rates[key] + persen
 
         tempData.push({
           "base": key,
